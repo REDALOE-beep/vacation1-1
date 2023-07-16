@@ -1,0 +1,26 @@
+//바보 계산 프로그램
+#include<stdio.h>
+#include<stdlib.h>
+int main(){
+    int reverse1, reverse2, ans, i = 0;
+    char su1[5], su2[5];
+    char temps[2];
+    scanf("%s %s", &su1, &su2);
+    temps[1] = su1[0];
+    su1[0] = su1[2];
+    su1[2] = temps[1];
+
+    temps[1] = su2[0];
+    su2[0] = su2[2];
+    su2[2] = temps[1];
+
+    reverse1 = atoi(su1);
+    reverse2 = atoi(su2);
+    if (reverse1 > reverse2){
+        printf("%d", reverse1);
+    }
+    else{
+        printf("%d", reverse2);
+    }
+    return 0;
+}
