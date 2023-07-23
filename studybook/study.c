@@ -922,3 +922,8 @@
 //     printf("\n2차원 배열 외곽 요소의 합은 %d 입니다.", outline);          
 // }
 
+#include <stdio.h>
+int main() {
+    printf("hello world");
+    return 0;
+}
